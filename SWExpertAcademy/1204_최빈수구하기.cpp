@@ -1,7 +1,9 @@
 /*
-#3) 에서 자꾸 77이나오네.
+test_case 3) 에서 자꾸 77이나오네.
 test_case반복문안돌고 따로 input입력하면 정확히나오는데..
+=> cin >> test_case위치 오류. test_case입력받는 부분이 밀렸음. 해결!
 */
+
 
 #include<iostream>
 #include<algorithm>
