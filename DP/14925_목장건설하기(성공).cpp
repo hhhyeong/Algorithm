@@ -1,3 +1,10 @@
+/*
+	TS #1)
+		min()함수 안에 인수가 3개 이상일 때, {}를 씌워서
+		=> min({A, B, C })
+		   이렇게 써주면 된다.
+*/
+
 #include<iostream>
 #include<algorithm>
 #include<cstring>
@@ -10,7 +17,7 @@ int ans = 0;
 
 int main() {
 
-	int N, M;	//N:����, M:����
+	int N, M;	//N:가로, M:세로
 
 	cin >> M >> N;
 
