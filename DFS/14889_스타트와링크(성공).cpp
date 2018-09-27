@@ -1,5 +1,5 @@
 /*
-14889_½ºÅ¸Æ®¿Í¸µÅ©
+14889_ìŠ¤íƒ€íŠ¸ì™€ë§í¬
 */
 
 #include <iostream>
@@ -47,15 +47,15 @@ void dfs(int level, int member) {
 		check[team1[level]] = 1;
 		powerCompare();
 	}
-	// else¸¦ ¾ÈÇØÁÖ¸é endingÁ¶°Ç ³¡³ª°í ÇÔ¼ö°¡ return µÇÁö ¾Ê´Â ÀÌ·± °æ¿ì, Àç±ÍÁ¶°ÇÀ» ½ÇÇàÇØ¹ö¸®°Ô µÊ.
+	// elseë¥¼ ì•ˆí•´ì£¼ë©´ endingì¡°ê±´ ëë‚˜ê³  í•¨ìˆ˜ê°€ return ë˜ì§€ ì•ŠëŠ” ì´ëŸ° ê²½ìš°, ì¬ê·€ì¡°ê±´ì„ ì‹¤í–‰í•´ë²„ë¦¬ê²Œ ë¨.
 	else {
 		team1[level] = member;
 		check[team1[level]] = 1;
 		for (int i = member + 1; i <= N; i++) {
 			dfs(level + 1, i);
-			check[team1[level + 1]] = 0;		// Àç±Í ³¡³­ ÈÄ, check°ªÀ» µÇµ¹·Á ³õ¾Æ¾ß ÇÏ´Âµ¥.
-												// check[team1[level]] = 0 ÀÎÁö, check[team1[level+1]] = 0 ÀÎÁö Çò°¥·ÇÀ½.
-												// level+1À» ÀÎ¼ö·Î °®´Â dfs°¡ ³¡³µ±â¶§¹®¿¡ ´ç¿¬È÷ level¿¡ +1À» ÇØÁà¾ßÇÔ.
+			check[team1[level + 1]] = 0;	// ì¬ê·€ ëë‚œ í›„, checkê°’ì„ ë˜ëŒë ¤ ë†“ì•„ì•¼ í•˜ëŠ”ë°.
+							// check[team1[level]] = 0 ì¸ì§€, check[team1[level+1]] = 0 ì¸ì§€ í—·ê°ˆë ·ìŒ.
+							// level+1ì„ ì¸ìˆ˜ë¡œ ê°–ëŠ” dfsê°€ ëë‚¬ê¸°ë•Œë¬¸ì— ë‹¹ì—°íˆ levelì— +1ì„ í•´ì¤˜ì•¼í•¨.
 		}
 	}
 }
