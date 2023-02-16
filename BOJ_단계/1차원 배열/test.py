@@ -10,3 +10,6 @@
     
 # print(arr[2])
 
+
+score = []
+score = list(input())
