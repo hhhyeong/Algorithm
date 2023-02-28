@@ -1,3 +1,3 @@
 a, b = input().split()
-print(b)
-print(a)
+print(b,end=' ')
+print(a,end='')
