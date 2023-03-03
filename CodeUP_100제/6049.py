@@ -1,5 +1,5 @@
 a, b = input().split()
-if int(b) >= int(b):
+if int(a) == int(b):
     print("True")
-else
+else:
     print("False")
