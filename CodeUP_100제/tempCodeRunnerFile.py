@@ -1,2 +1,1 @@
-a = int(input())
-print(~a)
+f(a<=b) b) <= c) else c)
