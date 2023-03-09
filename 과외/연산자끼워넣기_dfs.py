@@ -4,6 +4,7 @@ maxnum=0
 minnum=99999
 
 def dfs(n,plus,minus,mul,div,result):
+    global maxnum, minnum
     if n==N:
         minnum=min(result,minnum)
         maxnum=max(result,maxnum)
@@ -23,6 +24,7 @@ def dfs(n,plus,minus,mul,div,result):
             dfs(n+1,plus,minus,mul,div-1,new_result)
 
 
-  dfs(1,2,1,1,1,arr[0])
-        
+dfs(1,2,1,1,1,arr[0])
 
+print(maxnum)
+print(minnum)
